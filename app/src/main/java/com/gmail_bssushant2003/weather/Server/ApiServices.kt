@@ -30,6 +30,6 @@ interface ApiServices {
     fun getCitiesList(
         @Query("q") q:String,
         @Query("limit") limit:Int,
-        @Query("apiid") APIKey: String
+        @Query("appid") ApiKey: String
     ):Call<CityResponseApi>
 }
